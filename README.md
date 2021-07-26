@@ -1,2 +1,2 @@
 # TDDSnipApp
-Popular movies selection
+Snipping guide
