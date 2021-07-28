@@ -101,7 +101,7 @@
 			children = (
 				4B09F37926AF03DC00E4A056 /* AppDelegate.swift */,
 				4B09F37B26AF03DC00E4A056 /* SceneDelegate.swift */,
-				4B09F37D26AF03DC00E4A056 /* ViewController.swift */,
+				4B15871926B1ADDF00AC3D99 /* Views */,
 				4B09F37F26AF03DC00E4A056 /* Main.storyboard */,
 				4B09F38226AF03DD00E4A056 /* Assets.xcassets */,
 				4B09F38426AF03DD00E4A056 /* LaunchScreen.storyboard */,
@@ -126,6 +126,14 @@
 				4B09F39D26AF03DD00E4A056 /* Info.plist */,
 			);
 			path = TDDSnipAppUITests;
+			sourceTree = "<group>";
+		};
+		4B15871926B1ADDF00AC3D99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B09F37D26AF03DC00E4A056 /* ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
