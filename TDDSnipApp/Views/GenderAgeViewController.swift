@@ -48,7 +48,7 @@ extension GenderAgeViewController: UIPickerViewDelegate, UIPickerViewDataSource,
 
    
 
-    func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
+    private func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
         currentTextfield = textField
         self.pickerView.reloadAllComponents()
         return true

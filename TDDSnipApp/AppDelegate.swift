@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // 2. Print device token to use for PNs payloads
     print("Device Token: \(token)")
     let bundleID = Bundle.main.bundleIdentifier;
-    print("Bundle ID: \(token) \(bundleID)");
+        print("Bundle ID: \(token) \(String(describing: bundleID))");
     // 3. Save the token to local storeage and post to app server to generate Push Notification. ...
     }
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
