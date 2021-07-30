@@ -18,6 +18,7 @@
 		4B15871B26B1AE4300AC3D99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15871A26B1AE4300AC3D99 /* LoginViewController.swift */; };
 		4B15871D26B1AE7400AC3D99 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15871C26B1AE7400AC3D99 /* SignupViewController.swift */; };
 		4B15871F26B1AE8F00AC3D99 /* GenderAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15871E26B1AE8F00AC3D99 /* GenderAgeViewController.swift */; };
+		4BB5EEDA26B313380097D333 /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5EED926B313380097D333 /* AfterLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		4B15871A26B1AE4300AC3D99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B15871C26B1AE7400AC3D99 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		4B15871E26B1AE8F00AC3D99 /* GenderAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderAgeViewController.swift; sourceTree = "<group>"; };
+		4BB5EED926B313380097D333 /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginViewController.swift; sourceTree = "<group>"; };
+		4BB5EEDB26B4522D0097D333 /* TDDSnipApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TDDSnipApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		4B09F37826AF03DC00E4A056 /* TDDSnipApp */ = {
 			isa = PBXGroup;
 			children = (
+				4BB5EEDB26B4522D0097D333 /* TDDSnipApp.entitlements */,
 				4B09F37926AF03DC00E4A056 /* AppDelegate.swift */,
 				4B09F37B26AF03DC00E4A056 /* SceneDelegate.swift */,
 				4B15871926B1ADDF00AC3D99 /* Views */,
@@ -141,6 +145,7 @@
 				4B15871A26B1AE4300AC3D99 /* LoginViewController.swift */,
 				4B15871C26B1AE7400AC3D99 /* SignupViewController.swift */,
 				4B15871E26B1AE8F00AC3D99 /* GenderAgeViewController.swift */,
+				4BB5EED926B313380097D333 /* AfterLoginViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 			files = (
 				4B15871B26B1AE4300AC3D99 /* LoginViewController.swift in Sources */,
 				4B09F37E26AF03DC00E4A056 /* ViewController.swift in Sources */,
+				4BB5EEDA26B313380097D333 /* AfterLoginViewController.swift in Sources */,
 				4B15871D26B1AE7400AC3D99 /* SignupViewController.swift in Sources */,
 				4B09F37A26AF03DC00E4A056 /* AppDelegate.swift in Sources */,
 				4B09F37C26AF03DC00E4A056 /* SceneDelegate.swift in Sources */,
@@ -456,7 +462,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TDDSnipApp/TDDSnipApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = TDDSnipApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,7 +482,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TDDSnipApp/TDDSnipApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = TDDSnipApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,6 +503,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = TDDSnipAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -514,6 +525,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = TDDSnipAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,6 +546,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = TDDSnipAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -553,6 +566,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = TDDSnipAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

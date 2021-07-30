@@ -48,7 +48,7 @@ extension GenderAgeViewController: UIPickerViewDelegate, UIPickerViewDataSource,
 
    
 
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+    func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
         currentTextfield = textField
         self.pickerView.reloadAllComponents()
         return true
@@ -66,9 +66,10 @@ extension GenderAgeViewController: UIPickerViewDelegate, UIPickerViewDataSource,
             return ageOptions.count
         }
         
-        
-        return genderOptions.count
-       
+        else if genderPicker.isFirstResponder{
+            return genderOptions.count
+        }
+        return 1
             
        
     }
@@ -77,11 +78,11 @@ extension GenderAgeViewController: UIPickerViewDelegate, UIPickerViewDataSource,
         if agePicker.isFirstResponder {
             return ageOptions[row]
         }
-        //else if genderPicker.isFirstResponder{
+        else if genderPicker.isFirstResponder{
         
         return genderOptions[row]
-       // }
-        //return ""
+        }
+        return nil
         
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -92,7 +93,7 @@ extension GenderAgeViewController: UIPickerViewDelegate, UIPickerViewDataSource,
             agePicker.resignFirstResponder()
         }
         else if genderPicker.isFirstResponder{
-            genderPicker.text = ageOptions[row]
+            genderPicker.text = genderOptions[row]
             genderPicker.resignFirstResponder()
         }
     }
