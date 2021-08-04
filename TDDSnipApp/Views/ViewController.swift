@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UNUserNotificationCenter.current().delegate = self;
+        UNUserNotificationCenter.current().delegate = self
 
         // Do any additional setup after loading the view.
     }

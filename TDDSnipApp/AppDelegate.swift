@@ -50,6 +50,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Bundle ID: \(token) \(String(describing: bundleID))");
     // 3. Save the token to local storeage and post to app server to generate Push Notification. ...
     }
+    
+    //6684da1343d04a461101fa030fad320243bef790e3a9146f059174b31148e5f2
+    //a09c47c3839d429e4bb127b0b111e563cabab0030a1270f10cd75ec8e06b51fb
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
     print("failed to register for remote notifications: \(error.localizedDescription)")
     }
