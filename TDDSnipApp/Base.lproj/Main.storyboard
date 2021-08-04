@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -148,8 +149,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldA-jF-AgY">
-                                <rect key="frame" x="181" y="566" width="113" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldA-jF-AgY">
+                                <rect key="frame" x="151" y="568" width="113" height="30"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -221,7 +222,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgH-8q-wCQ">
-                                <rect key="frame" x="187" y="609" width="43" height="38"/>
+                                <rect key="frame" x="186" y="609" width="43" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Next">
@@ -284,6 +285,9 @@
                                 <state key="normal" title="Beginnner">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WfF-Wq-RYz" kind="show" id="QV8-eN-fJX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pZ-fd-NBg">
                                 <rect key="frame" x="151" y="389" width="115" height="38"/>
@@ -292,6 +296,9 @@
                                 <state key="normal" title="Intermediate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WfF-Wq-RYz" kind="show" id="tZQ-na-C10"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jos-S0-XM1">
                                 <rect key="frame" x="180" y="555" width="57" height="36"/>
@@ -300,6 +307,9 @@
                                 <state key="normal" title="Expert">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WfF-Wq-RYz" kind="show" id="ej2-iB-XQn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KhP-vQ-zX8"/>
@@ -310,6 +320,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YA1-BQ-zEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3876.811594202899" y="40.848214285714285"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="Aef-vz-dnd">
+            <objects>
+                <viewController storyboardIdentifier="TabBarViewController" id="WfF-Wq-RYz" customClass="TabBarViewController" customModule="TDDSnipApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7S-HA-V1p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creator Studio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6w-MB-xUz">
+                                <rect key="frame" x="119" y="68" width="177" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Futur Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfG-Qe-0on">
+                                <rect key="frame" x="135" y="178" width="145" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrv-se-KW3">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" image="house" catalog="system" id="T7v-5e-vLQ"/>
+                                    <tabBarItem title="Share" image="scissors" catalog="system" selectedImage="scissors" id="4zB-B4-oCB"/>
+                                    <tabBarItem title="Account" image="person.fill" catalog="system" id="Xbh-84-JLJ">
+                                        <imageReference key="selectedImage" image="person" catalog="system" symbolScale="medium"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pto-nL-7IT"/>
+                        <color key="backgroundColor" red="0.33306633260000001" green="0.2496832621" blue="0.15064838429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iRw-AA-aqM"/>
+                    <connections>
+                        <outlet property="account" destination="Xbh-84-JLJ" id="1oo-kF-lmv"/>
+                        <outlet property="home" destination="T7v-5e-vLQ" id="HTl-MK-gtl"/>
+                        <outlet property="share" destination="4zB-B4-oCB" id="Akb-hz-rDd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwt-RI-pVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4592.753623188406" y="40.848214285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y0v-uI-W9s">
@@ -331,9 +390,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="QV8-eN-fJX"/>
         <segue reference="qs1-Iv-yab"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="scissors" catalog="system" width="128" height="92"/>
         <image name="scissors.badge.ellipsis" catalog="system" width="128" height="84"/>
     </resources>
 </document>
