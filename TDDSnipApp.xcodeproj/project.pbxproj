@@ -19,6 +19,8 @@
 		4B15871D26B1AE7400AC3D99 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15871C26B1AE7400AC3D99 /* SignupViewController.swift */; };
 		4B15871F26B1AE8F00AC3D99 /* GenderAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15871E26B1AE8F00AC3D99 /* GenderAgeViewController.swift */; };
 		4B74226926BAE30300AC5795 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74226826BAE30300AC5795 /* TabBarViewController.swift */; };
+		4B74226B26BAE50B00AC5795 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74226A26BAE50B00AC5795 /* HomeViewController.swift */; };
+		4B74226D26BAE52000AC5795 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74226C26BAE52000AC5795 /* AccountViewController.swift */; };
 		4BB5EEDA26B313380097D333 /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5EED926B313380097D333 /* AfterLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		4B15871C26B1AE7400AC3D99 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		4B15871E26B1AE8F00AC3D99 /* GenderAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderAgeViewController.swift; sourceTree = "<group>"; };
 		4B74226826BAE30300AC5795 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4B74226A26BAE50B00AC5795 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4B74226C26BAE52000AC5795 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		4BB5EED926B313380097D333 /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginViewController.swift; sourceTree = "<group>"; };
 		4BB5EEDB26B4522D0097D333 /* TDDSnipApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TDDSnipApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +153,8 @@
 				4B15871E26B1AE8F00AC3D99 /* GenderAgeViewController.swift */,
 				4BB5EED926B313380097D333 /* AfterLoginViewController.swift */,
 				4B74226826BAE30300AC5795 /* TabBarViewController.swift */,
+				4B74226A26BAE50B00AC5795 /* HomeViewController.swift */,
+				4B74226C26BAE52000AC5795 /* AccountViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +294,8 @@
 				4B09F37E26AF03DC00E4A056 /* ViewController.swift in Sources */,
 				4BB5EEDA26B313380097D333 /* AfterLoginViewController.swift in Sources */,
 				4B15871D26B1AE7400AC3D99 /* SignupViewController.swift in Sources */,
+				4B74226B26BAE50B00AC5795 /* HomeViewController.swift in Sources */,
+				4B74226D26BAE52000AC5795 /* AccountViewController.swift in Sources */,
 				4B09F37A26AF03DC00E4A056 /* AppDelegate.swift in Sources */,
 				4B09F37C26AF03DC00E4A056 /* SceneDelegate.swift in Sources */,
 				4B15871F26B1AE8F00AC3D99 /* GenderAgeViewController.swift in Sources */,
